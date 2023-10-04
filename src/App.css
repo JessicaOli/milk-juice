@@ -11,7 +11,7 @@
   max-height: 100%;
   border-radius: 50px 50px 0 0;
   background-color: #FEF9FF;
-  width: 75%;
+  width: 60%;
   margin-top: 3%;
 }
 
@@ -47,6 +47,7 @@
   display: flex;
   align-items: center;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 .font-face-km {
@@ -56,9 +57,9 @@
 .hero-header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin:5%;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin:5% 0 0 5%;
 }
 
 .hero-title {
@@ -73,6 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width:30%;
 }
 
 .image{
@@ -83,9 +85,13 @@
   background-color: #C890FF;
   border: none;
   border-radius: 20px;
-  width: 15vw;
-  height: 5vh;
+  width: 200px;
+  height: 60px;
   color: white;
   font-size: 20px;
   box-shadow: 0px 10px 20px #c8c5c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
 }
