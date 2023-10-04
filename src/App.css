@@ -62,7 +62,7 @@
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .hero-desc {
@@ -77,4 +77,15 @@
 
 .image{
   width:90%;
+}
+
+.button{
+  background-color: #C890FF;
+  border: none;
+  border-radius: 20px;
+  width: 15vw;
+  height: 5vh;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 10px 20px #c8c5c8;
 }

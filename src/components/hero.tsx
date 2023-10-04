@@ -9,6 +9,7 @@ export default function Hero() {
                     <div className="hero-desc">
                         Jus buah Blueberry dan Strawberry ditambah dengan susu asli untuk sepasang kekasi.
                     </div>
+                    <button className='button'>Order now {'->'}</button>
                 </div>
                 <div className="right">
                     <img src={milkJuice} alt='image' className='image'/>
