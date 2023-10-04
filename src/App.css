@@ -59,15 +59,18 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-  margin:5% 0 0 5%;
+  margin:3% 0 0 5%;
 }
 
 .hero-title {
   font-size: 65px;
+  text-align: start;
 }
 
 .hero-desc {
   color: #ABA8AB;
+  text-align: start;
+  word-spacing: 10px;
 }
 
 .left{
@@ -78,7 +81,7 @@
 }
 
 .image{
-  width:90%;
+  width:70%;
 }
 
 .button{
@@ -93,5 +96,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
