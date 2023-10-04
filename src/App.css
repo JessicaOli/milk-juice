@@ -1,22 +1,22 @@
 .App {
   text-align: center;
-  height:100vh;
-  width:100vw;
-  display:flex;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  background-image: linear-gradient(#FEEAF3,#FCEFFF,#F9EAFF,#F7F4FB);
+  background-image: linear-gradient(#FFEAFD, #FEEAF3, #FCEFFF, #F9EAFF, #F7F4FB);
 }
 
-.background-box{
-  max-height:100%;
+.background-box {
+  max-height: 100%;
   border-radius: 50px 50px 0 0;
   background-color: #FEF9FF;
-  width: 50%;
+  width: 75%;
   margin-top: 3%;
 }
 
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   width: 100%;
   height: 10%;
   align-items: center;
@@ -31,20 +31,50 @@
   display: inline-block;
 }
 
-.title{
+.title {
   font-weight: bolder;
-  font-size:40px;
-  margin-left:-25%;
+  font-size: 40px;
+  margin-left: -25%;
 }
 
-.shopping-icon{
-  color:#AF60FA;
-  font-size:40px;
+.shopping-icon {
+  color: #AF60FA;
+  font-size: 40px;
   margin-right: 5%;
 }
 
-.logo{
-  display:flex;
+.logo {
+  display: flex;
   align-items: center;
   margin-left: 5%;
+}
+
+.font-face-km {
+  font-family: "Kamerik";
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin:5%;
+}
+
+.hero-title {
+  font-size: 50px;
+}
+
+.hero-desc {
+  color: #ABA8AB;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image{
+  width:90%;
 }
