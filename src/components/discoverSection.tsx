@@ -7,7 +7,6 @@ export default function DiscoverSection() {
     const products = ['Meelky Juice', 'Meelky Original', 'Meelky Special'];
 
     const handleTabChange = (product: string) => {
-        console.log(product);
         setSelectedTab(product);
     }
 
@@ -15,11 +14,13 @@ export default function DiscoverSection() {
         <section>
             <div className="hero-discover">
                 <h1>Discover</h1>
-                {products.map((product: string) => (
-                    <DiscoverTabs selectTab={() => handleTabChange(product)} active={selectedTab === product}>
-                        {product}
-                    </DiscoverTabs>
-                ))}
+                <div className="tabs">
+                    {products.map((product: string) => (
+                        <DiscoverTabs selectTab={() => handleTabChange(product)} active={selectedTab === product}>
+                            {product}
+                        </DiscoverTabs>
+                    ))}
+                </div>
             </div>
         </section>
     )
