@@ -13,7 +13,7 @@ export default function DiscoverSection() {
     return (
         <section>
             <div className="hero-discover">
-                <h1>Discover</h1>
+                <h1 className="discover-title">Discover</h1>
                 <div className="tabs">
                     {products.map((product: string) => (
                         <DiscoverTabs selectTab={() => handleTabChange(product)} active={selectedTab === product}>

@@ -141,4 +141,9 @@
   display: flex;
   flex-direction: column;
   margin: 3% 0 0 5%;
+  align-items: center;
+}
+
+.discover-title{
+  font-size: 60px;
 }
