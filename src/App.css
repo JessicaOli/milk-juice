@@ -99,9 +99,14 @@
   margin-top: 10%;
 }
 
-.beverages {
+.beverage {
   color: #AF60FA;
   margin-right: 5%;
+}
+
+.selected-beverage{
+  margin-right: 5%;
+  filter:brightness(200%);
 }
 
 .tabs {
