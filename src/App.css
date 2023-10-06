@@ -1,17 +1,17 @@
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(#FFEAFD, #FEEAF3, #FCEFFF, #F9EAFF, #F7F4FB);
+  background-image: linear-gradient(#FFEAFD, #fde1ee, #fde1ee, #FCEFFF, #F9EAFF, #F7F4FB);
 }
 
 .background-box {
-  max-height: 100%;
   border-radius: 50px 50px 0 0;
   background-color: #FEF9FF;
   width: 60%;
+  height: 100%;
   margin-top: 3%;
 }
 
@@ -101,12 +101,12 @@
 
 .beverage {
   color: #AF60FA;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
-.selected-beverage{
-  margin-right: 5%;
-  filter:brightness(200%);
+.selected-beverage {
+  margin-right: 10%;
+  filter: brightness(200%);
 }
 
 .tabs {
@@ -122,7 +122,7 @@
   margin-bottom: 3%;
   padding-left: 25px;
   cursor: pointer;
-  width: 200px;
+  width: 250px;
   height: 60px;
 }
 
@@ -137,18 +137,57 @@
   color: white;
   box-shadow: 0px 10px 20px #c8c5c8;
   cursor: default;
-  width: 200px;
+  width: 250px;
   height: 60px;
   padding-left: 25px;
 }
 
-.hero-discover {
+.hero-discover-left {
   display: flex;
   flex-direction: column;
-  margin: 3% 0 0 5%;
   align-items: center;
+  margin-right: 5%;
 }
 
-.discover-title{
+.hero-discover-middle {
+  margin-right: 5%;
+}
+
+.hero-discover {
+  display: flex;
+  align-items: flex-start;
+  margin: 3%;
+}
+
+.discover-title {
   font-size: 60px;
+}
+
+.discover-middle-background {
+  border-radius: 100px;
+  background-color: #e6cefd;
+  min-width: 15vw;
+  min-height: 50vh;
+}
+
+.discover-image {
+  width: 25vw;
+}
+
+.hero-discover-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.discover-right-title {
+  font-size: 40px;
+}
+
+.nutrition-facts {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: #AF60FA;
 }
