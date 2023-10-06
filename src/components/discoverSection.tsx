@@ -4,7 +4,7 @@ import DiscoverTabs from "./discoverTabs";
 export default function DiscoverSection() {
     const [selectedTab, setSelectedTab] = useState('Meelky Juice');
 
-    const products = ['Meelky Juice', 'Meelky Original', 'Meelky Special'];
+    const products = [{name:'Meelky Juice', icon:'milk-jug'}, {name:'Meelky Original', icon:'milk-carton'}, {name:'Meelky Special', icon:'milk-glass'}];
 
     const handleTabChange = (product: string) => {
         setSelectedTab(product);
@@ -15,8 +15,8 @@ export default function DiscoverSection() {
             <div className="hero-discover">
                 <h1 className="discover-title">Discover</h1>
                 <div className="tabs">
-                    {products.map((product: string) => (
-                        <DiscoverTabs selectTab={() => handleTabChange(product)} active={selectedTab === product}>
+                    {products.map((product: any) => (
+                        <DiscoverTabs selectTab={() => handleTabChange(product.name)} active={selectedTab === product.name}>
                             {product}
                         </DiscoverTabs>
                     ))}

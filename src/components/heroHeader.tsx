@@ -16,7 +16,7 @@ export default function HeroHeader() {
                     </button>
                 </div>
                 <div className="right">
-                    <img src={milkJuice} alt='image' className='image' />
+                    <img src={milkJuice} alt='milk juice' className='image' />
                 </div>
             </div>
         </section>
