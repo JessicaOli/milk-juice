@@ -1,14 +1,19 @@
 import { useState } from "react";
 import DiscoverTabs from "./discoverTabs";
 import blankCarton from "../images/blank-carton.png";
+import blankJug from "../images/blank-jug.png";
+import blankGlass from "../images/blank-glass.png";
+import { Product } from "../models/product";
 
 export default function DiscoverSection() {
-    const [selectedTab, setSelectedTab] = useState('Meelky Juice');
+    const products: Product[] = [{ name: 'Meelky Juice', icon: 'milk-jug', image: blankJug }, { name: 'Meelky Original', icon: 'milk-carton', image: blankCarton }, { name: 'Meelky Special', icon: 'milk-glass', image: blankGlass }];
 
-    const products = [{ name: 'Meelky Juice', icon: 'milk-jug' }, { name: 'Meelky Original', icon: 'milk-carton' }, { name: 'Meelky Special', icon: 'milk-glass' }];
+    const [selectedTab, setSelectedTab] = useState(products[0]);
 
-    const handleTabChange = (product: string) => {
-        setSelectedTab(product);
+    const handleTabChange = (productName: string) => {
+        setSelectedTab(products.filter((product: Product) => {
+            return product.name === productName
+        })[0]);
     }
 
     return (
@@ -17,8 +22,8 @@ export default function DiscoverSection() {
                 <div className="hero-discover-left">
                     <h1 className="discover-title">Discover</h1>
                     <div className="tabs">
-                        {products.map((product: any) => (
-                            <DiscoverTabs selectTab={() => handleTabChange(product.name)} active={selectedTab === product.name}>
+                        {products.map((product: Product) => (
+                            <DiscoverTabs selectTab={() => handleTabChange(product.name)} active={selectedTab.name === product.name}>
                                 {product}
                             </DiscoverTabs>
                         ))}
@@ -26,7 +31,7 @@ export default function DiscoverSection() {
                 </div>
                 <div className="hero-discover-middle">
                     <div className="discover-middle-background">
-                        <img src={blankCarton} alt='blank carton' className="discover-image" />
+                        <img src={selectedTab.image} alt='blank carton' className="discover-image" />
                     </div>
                 </div>
                 <div className="hero-discover-right">

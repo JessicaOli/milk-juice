@@ -146,11 +146,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
 .hero-discover-middle {
   margin-right: 5%;
+  width: 50%;
 }
 
 .hero-discover {
@@ -166,12 +167,10 @@
 .discover-middle-background {
   border-radius: 100px;
   background-color: #e6cefd;
-  min-width: 15vw;
-  min-height: 50vh;
 }
 
 .discover-image {
-  width: 25vw;
+  scale:0.5;
 }
 
 .hero-discover-right {
